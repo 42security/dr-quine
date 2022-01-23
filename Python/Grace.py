@@ -1,10 +1,18 @@
 # comment
 def grace(file, code):
     file.write(code.format(s = code, c = chr(34)))
+    grace3(file)
+
+def grace3(file):
+    file.close()
 
 code = """# comment
 def grace(file, code):
     file.write(code.format(s = code, c = chr(34)))
+    grace3(file)
+
+def grace3(file):
+    file.close()
 
 code = {c}{c}{c}{s}{c}{c}{c}
 
