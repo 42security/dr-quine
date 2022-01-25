@@ -20,3 +20,9 @@ Sully:
 
 clean:
 	@rm Colleenfile Grace_kid.py Sully_*
+
+fclean: clean
+
+re: fclean all
+
+.PHONY: all clean fclean re
